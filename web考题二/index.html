@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          line-height: 1.5;
+        }
+           @media screen and (max-width: 680px){
+              body{
+                  background-color: aquamarine;
+                          }
+                      }
+          @media screen and (min-width: 680px){
+              body{
+                  background-color: white;
+                  max-width: 980px;
+              }
+          }
+          body{
+            background-image: url(./背景.jpg);
+            background-size: cover; /* 背景图片将被缩放以完全覆盖背景区域 */
+            background-position: center; /* 背景图片在背景区域居中显示 */
+            background-repeat: no-repeat; /* 背景图片不平铺重复 */
+            height: 300px; /* 设置空白区域的高度 */
+            background-attachment: fixed;
+            margin: 0 auto;
+          }
+          div{
+            padding: 0 ;
+          }
+          .yi{
+              width: 100%;
+              height: 100px;
+              background-color: aqua;
+              font-size: 50px;
+              text-align: center;
+              background-image: url(./开头.jpg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+          }
+          .gnav {
+              background:#d8c7a0;
+            }
+            .gnav ul {
+                display: flex; /* 保留flex属性，可以让内部元素横向排列 */
+              padding: 0;
+              margin: 0
+            }
+            .gnav li {
+              width: 33.3%;
+  
+            }
+            .gnav a {
+              display: block;
+              padding: 15px 0;
+              color: #fff;
+                text-align: center;
+              text-decoration: none;
+              font-size: 20px;
+            }
+            .gnav a:hover {
+              background: #ecdfc2;
+            }
+            .geren{
+                background-color: #ecdfc2;
+                line-height: 5px;
+            }
+            .flex-container{
+              display:flex;
+              justify-content: center;
+              align-items: stretch;
+            }
+            .staff-photo img {
+              width: 50%; /* 设置图片宽度为原始尺寸的一半 */
+              height: auto; /* 让高度自动调整以保持宽高比 */
+            }
+            .heading{
+              display: flex; /* 将 .heading 设置为 Flex 容器 */
+              justify-content: space-between; /* 使标题和 "more" 之间的空间平均分布 */
+              align-items: center; /* 垂直居中标题和 "more" */
+            }
+            .menu-list {
+              display: flex;
+              flex-wrap: wrap;
+            }
+            .col{
+                flex: 0 0 calc(33.333% - 20px); 
+              margin:10px;
+            }
+          .pc-grid-col2 {
+              display: flex; 
+              flex-wrap: nowrap; 
+            }
+                  .section {
+            margin: 40px 0;
+          }
+  
+          /*Pickup Menu
+          --------------------*/
+          .menu-list {
+            text-align: center;
+            border: 2px solid black;
+          }
+          .menu-list li {
+            margin-bottom: 20px;
+            background-color:  #d8c7a0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 2px solid black;
+          }
+          .menu-text {
+            margin: 15px;
+          }
+          .aihao{
+            background-color: #d8c7a0;
+          }
+          .tingge{
+            background-color: lightblue;
+          }
+        .pinjia{
+          width: 50%;
+          height: 50px;
+        }
+        .yijana{
+          width: 50%;
+          height: 50px;
+        }
+  </style>
+</head>
+<body>
+    <audio src="./蜡笔丸子 - 洛克王国BGM (长笛版).flac" loop autoplay></audio>
+    <div>
+        <div class="yi">欢迎来到我的个人网页</div>
+    </div>
+    <div class="tou">
+      <nav id="gnav" class="gnav">
+        <ul>
+            <li><a href="#">个人信息</a></li>
+            <li><a href="#">故乡</a></li>
+            <li><a href="#">爱好</a></li>
+        </ul>
+      </nav>
+      </div>
+      <div class="geren">
+        <h1>个人信息</h1>
+        <ul>
+          <li>学校：<a href="https://www.hzu.edu.cn/main.htm" target="_blank">惠州学院</a></li>
+          <li>专业：计算机</li>
+          <li>年级：23级</li>
+          <li>班级：计算机12班</li>
+          <li>学号：2314101219</li>
+          <li>母校：<a href="https://baike.baidu.com/item/%E6%B1%95%E5%A4%B4%E5%B8%82%E6%BD%AE%E9%98%B3%E7%AC%AC%E4%B8%80%E4%B8%AD%E5%AD%A6/3846106">潮阳第一中学</a></li>
+        </ul>
+      </div>
+      <div class="aihao">
+        <h1 class="heading">爱好</h1>
+        <section id="menu" class="section">
+        <h2>听歌</h2>
+        <div class="tingge">
+          <ul class="pc-grid-col3 menu-list">
+            <li class="col">
+              <img src="./林俊杰.jpg" alt="" width="200px" height="200px">
+              <p class="menu-text"><a href="https://baike.baidu.com/item/%E6%9E%97%E4%BF%8A%E6%9D%B0/131821" target="_blank">林俊杰</a><br><b>《修炼爱情》<br></b></p>
+            </li>
+            <li class="col">
+              <img src="./邓紫棋.webp" alt="" width="200px" height="200px">
+              <p class="menu-text"><a href="https://baike.baidu.com/item/%e9%82%93%e7%b4%ab%e6%a3%8b/6798196" target="_blank">邓紫棋</a><br><b>《倒数》</b></p>
+            </li>
+            <li class="col">
+              <img src="./周杰伦.webp" alt="" width="200px" height="200px">
+              <p class="menu-text"><a href="https://baike.baidu.com/item/%E5%91%A8%E6%9D%B0%E4%BC%A6/129156" target="_blank">周杰伦</a><br><b>《安静》</b></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      </div>
+      <div class="aihao">
+        <h1>故乡：<a href="https://baike.baidu.com/item/%E6%B1%95%E5%A4%B4%E5%B8%82/1416572">汕头</a></h1>
+        <table border="2" width="100%" height="200px">
+          <tr>
+            <td>美食</td>
+            <td><a href="https://baike.baidu.com/item/%E7%89%9B%E8%82%89%E7%B2%BF%E6%9D%A1/1906299#%E8%90%A5%E5%85%BB%E4%BB%B7%E5%80%BC">牛肉粿</a>/<a href="https://baike.baidu.com/item/%E6%BD%AE%E6%B1%95%E7%89%9B%E8%82%89%E7%81%AB%E9%94%85/24157108">牛肉火锅</a></td>
+            <td><a href="https://baike.baidu.com/item/%E6%BD%AE%E6%B1%95%E8%82%A0%E7%B2%89/14225250">潮汕肠粉</a></td>
+            <td><a href="https://baike.baidu.com/item/%E8%B4%B5%E5%B1%BF%E6%9C%A5%E9%A5%BC/1055147">贵屿朥饼</a></td>
+            <td><a href="https://baijiahao.baidu.com/s?id=1695542067347538467">各种粿品类</a></a></td>
+            <td rowspan="2">等等</td>
+          </tr>
+          <tr>
+            <td>文化</td>
+            <td><a href="https://baike.baidu.com/item/%E8%8B%B1%E6%AD%8C%E8%88%9E/7072555">英歌舞</a></td>
+            <td><a href="https://baike.baidu.com/item/%E6%BD%AE%E5%89%A7/407747">潮剧</a></td>
+            <td><a href="https://baike.sogou.com/v66260322.htm">营老爷</a></td>
+            <td><a href="https://baike.baidu.com/item/%E6%BD%AE%E6%B1%95%E8%8C%B6%E6%96%87%E5%8C%96/9628164">饮茶</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="aihao">
+        评价<select class="pinjia">
+          <option selected>优秀</option>
+          <option>良好</option>
+          <option disabled>及格</option>
+          <option disabled>不及格</option>
+        </select>
+        <br>
+        修改意见<input type="text" class="yijian" placeholder="完美">
+      </div>
+</body>
+</html>
